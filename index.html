@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="https://www.favicon.cc/favicon/240/277/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Kalculator Persegi</title>
+  </head>
+
+  <body>
+    <section class="hero is-primary is-fullheight">
+      <div class="hero-body">
+        <div class="container">
+          <div id="upperContainer" class="box light-theme has-text-centered">
+            <h1 class="title is-1 has-text-centered mb-4 has-text-dark">
+              Kalkulator Persegi
+            </h1>
+            <p id="description has-text-dark">
+              Persegi adalah bentuk poligon empat sisi dengan semua sisimemiliki
+              panjang yang sama.
+            </p>
+            <p id="description has-text-dark">
+              Penggunaanya klik "Hitung" untuk melanjutkan dan klik "Selesai"
+              apabila sudah selesai.
+            </p>
+          </div>
+
+          <div id="resultContainer" class="box light-theme has-text-centered">
+            <div id="hitungContainer" class="is-hidden">
+              <div
+                class="omni-calculator"
+                data-calculator="math/square"
+                data-width="100%"
+                data-config='{"a":{"label":"Sisi (a)"},"area":{"label":"Luas (A)"},"diagonal":{"label":"Diagonal (d)"},"perimeter":{"label":"Keliling (P)"},"hide":{}}'
+                data-currency="IDR"
+                data-show-row-controls="false"
+                data-version="3"
+                data-t="1705337691940"
+                style="margin: 0px auto"
+              >
+                <div class="omni-calculator-header">Perhitungan</div>
+                <div class="omni-calculator-footer">
+                  <a
+                    href="https://www.omnicalculator.com/math/square"
+                    target="_blank"
+                    ><img
+                      alt="Omni"
+                      class="omni-calculator-logo"
+                      src="https://cdn.omnicalculator.com/embed/omni-calculator-logo-long.svg"
+                  /></a>
+                </div>
+              </div>
+              <script async src="js/script.js"></script>
+            </div>
+            <button id="hitungButton" class="button is-primary">Hitung</button>
+            <button id="selesaiButton" class="button is-danger is-hidden">
+              Selesai
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
