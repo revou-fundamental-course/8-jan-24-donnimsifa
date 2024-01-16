@@ -3,6 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Kalkulator Persegi - Alat kalkulasi sederhana untuk menghitung luas, diagonal, dan keliling persegi."
+    />
+    <meta
+      name="keywords"
+      content="kalkulator, persegi, luas, diagonal, keliling, matematika, hitung"
+    />
+    <meta name="author" content="Donni Maulana Sipa" />
+    <meta name="robots" content="index, follow" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <link
       rel="shortcut icon"
       href="https://www.favicon.cc/favicon/240/277/favicon.ico"
@@ -21,12 +32,8 @@
               Kalkulator Persegi
             </h1>
             <p id="description has-text-dark">
-              Persegi adalah bentuk poligon empat sisi dengan semua sisimemiliki
-              panjang yang sama.
-            </p>
-            <p id="description has-text-dark">
-              Penggunaanya klik "Hitung" untuk melanjutkan dan klik "Selesai"
-              apabila sudah selesai.
+              Persegi memiliki empat sisi yang sama panjang. Klik "Hitung" untuk
+              memulai, dan klik "Selesai" untuk mengakhiri.
             </p>
           </div>
 
@@ -56,6 +63,56 @@
                 </div>
               </div>
               <script async src="js/script.js"></script>
+              <br />
+              <p>Berikut adalah formulanya :</p>
+              <p>
+                <math
+                  xmlns="http://www.w3.org/1998/Math/MathML"
+                  display="block"
+                >
+                  <!-- Rumus Luas: A = a^2 -->
+                  <semantics>
+                    <mrow>
+                      <mi>A</mi><mo>=</mo><msup><mi>a</mi><mn>2</mn></msup>
+                    </mrow>
+                    <annotation encoding="application/x-tex"
+                      >A = a^2</annotation
+                    >
+                  </semantics>
+
+                  <!-- Pemisah -->
+                  <mspace width="1em" />
+                  <mo>|</mo>
+                  <mspace width="1em" />
+
+                  <!-- Rumus Diagonal: d = a * sqrt(2) -->
+                  <semantics>
+                    <mrow>
+                      <mi>d</mi><mo>=</mo><mi>a</mi>
+                      <msqrt><mn>2</mn></msqrt>
+                    </mrow>
+                    <annotation encoding="application/x-tex"
+                      >d = a \sqrt{2}</annotation
+                    >
+                  </semantics>
+
+                  <!-- Pemisah -->
+                  <mspace width="1em" />
+                  <mo>|</mo>
+                  <mspace width="1em" />
+
+                  <!-- Rumus Keliling: P = 4 * a -->
+                  <semantics>
+                    <mrow>
+                      <mi>P</mi><mo>=</mo><mn>4</mn><mo>*</mo><mi>a</mi>
+                    </mrow>
+                    <annotation encoding="application/x-tex"
+                      >P = 4 \cdot a</annotation
+                    >
+                  </semantics>
+                </math>
+              </p>
+              <br />
             </div>
             <button id="hitungButton" class="button is-primary">Hitung</button>
             <button id="selesaiButton" class="button is-danger is-hidden">
